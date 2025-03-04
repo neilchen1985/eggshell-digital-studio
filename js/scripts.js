@@ -126,15 +126,75 @@ myButton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 function scrollFunctionBTT() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		myButton.style.display = "block";
-	} else {
-		myButton.style.display = "none";
-	}
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  myButton.style.display = "block";
+} else {
+  myButton.style.display = "none";
+}
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-	document.body.scrollTop = 0; // for Safari
-	document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // for Safari
+  document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
 }
+
+// testimonial carousel
+$(".testimonial-carousel").owlCarousel({
+  autoplay: true,
+  smartSpeed: 1500,
+  center: false,
+  dots: true,
+  loop: true,
+  margin: 25,
+  nav : false,
+  navText : [
+      '<i class="bi bi-arrow-left"></i>',
+      '<i class="bi bi-arrow-right"></i>'
+  ],
+  responsiveClass: true,
+  responsive: {
+    0:{
+        items:1
+    },
+    // 576:{
+    //     items:1
+    // },
+    // 768:{
+    //     items:2
+    // },
+    // 992:{
+    //     items:2
+    // },
+    // 1200:{
+    //     items:2
+    // }
+  }
+});
+
+/**
+ * Frequently Asked Questions Toggle
+ */
+document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
+  faqItem.addEventListener('click', () => {
+    faqItem.parentNode.classList.toggle('faq-active');
+  });
+});
+
+/**
+ * Correct scrolling position upon page load for URLs containing hash links.
+ */
+window.addEventListener('load', function(e) {
+  if (window.location.hash) {
+    if (document.querySelector(window.location.hash)) {
+      setTimeout(() => {
+        let section = document.querySelector(window.location.hash);
+        let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+        window.scrollTo({
+          top: section.offsetTop - parseInt(scrollMarginTop),
+          behavior: 'smooth'
+        });
+      }, 100);
+    }
+  }
+});

@@ -24,11 +24,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+	
+
+  <link href="owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="animate/animate.min.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
   <link rel="icon" href="images/favicon.png">
+
+  <!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1352411');
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarExample">
     
@@ -40,7 +54,7 @@
       <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>  -->
 
       <!-- Text Logo - Use this if you don't have a graphic logo -->
-      <a class="navbar-brand logo-text" href="index.html">Rev<span style="color: rgb(255, 142, 142)">Pushup</span></a>
+      <a class="navbar-brand logo-text" href="index.html">Rev<span style="color: #FD8916">Pushup</span></a>
 
       <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,13 +66,13 @@
               <a class="nav-link active" aria-current="page" href="#header">Home</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#services">服務</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#details">Details</a>
+            <a class="nav-link" href="#details">關於我們</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#testimonials">成功案例</a>
           </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
@@ -86,14 +100,17 @@
       <div class="row">
         <div class="col-lg-6 col-xl-5">
           <div class="text-container">
-            <h1 class="h1-large">你專屬的流量變現優化專家</h1>
-            <p class="p-large">RevPushup 為你辛苦經營的流量提供最佳的廣告變現解決方案，讓您的流量更有價值</p>
+            <h1 class="h1-large">你的專屬流量變現優化專家</h1>
+            <p class="p-large">
+              RevPushup 為你辛苦經營的流量提供最佳廣告變現解決方案，讓您的流量展現真正價值
+            </p>
             <a class="btn-solid-lg" href="#services">立即申請</a>
           </div> <!-- end of text-container -->
         </div> <!-- end of col -->
         <div class="col-lg-6 col-xl-7">
           <div class="image-container">
-            <img class="img-fluid" src="images/header-image.png" alt="alternative">
+            <!-- <img class="img-fluid" src="images/header-image.png" alt="alternative"> -->
+            <img class="img-fluid" src="images/Group 5.png" alt="alternative">
           </div> <!-- end of image-container -->
         </div> <!-- end of col -->
       </div> <!-- end of row -->
@@ -116,7 +133,7 @@
           <!-- Card -->
           <div class="card">
             <div class="card-icon">
-              <span class="fas fa-headphones-alt"></span>
+              <span class="fas fa-rocket"></span>
             </div>
             <div class="card-body">
               <h5 class="card-title">多元化廣告收益來源</h5>
@@ -128,8 +145,8 @@
 
           <!-- Card -->
           <div class="card">
-            <div class="card-icon red">
-              <span class="far fa-clipboard"></span>
+            <div class="card-icon deep-turquoise">
+              <span class="far fa-thumbs-up"></span>
             </div>
             <div class="card-body">
               <h5 class="card-title">兼顧體驗及收益的廣告配置</h5>
@@ -141,8 +158,8 @@
 
           <!-- Card -->
           <div class="card">
-            <div class="card-icon green">
-              <span class="far fa-comments"></span>
+            <div class="card-icon orange">
+              <span class="fas fa-chart-line"></span>
             </div>
             <div class="card-body">
               <h5 class="card-title">數據儀表板觀測成效變化</h5>
@@ -159,13 +176,13 @@
   <!-- end of services -->
 
 
-  <!-- Details 1 -->
-  <div id="details" class="basic-1">
+  <!-- Services 2 -->
+  <div class="basic-1">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-xl-7">
           <div class="image-container">
-              <img class="img-fluid" src="images/details-1.png" alt="alternative">
+              <img class="img-fluid" src="images/Group 6.png" alt="alternative">
           </div> <!-- end of image-container -->
         </div> <!-- end of col -->
         <div class="col-lg-6 col-xl-5">
@@ -181,17 +198,17 @@
       </div> <!-- end of row -->
     </div> <!-- end of container -->
   </div> <!-- end of basic-1 -->
-  <!-- end of details 1 -->
+  <!-- end of Services 2 -->
 
 
-  <!-- Details 2 -->
-  <div class="basic-2">
+  <!-- Details -->
+  <div id="details" class="basic-2">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-xl-5">
+      <div class="row testimonial">
+        <div class="col-lg-5 col-xl-4">
           <div class="text-container">
             <div class="section-title">關於我們</div>
-            <h2>超過 10 年流量賣方經驗</h2>
+            <h2>超過 10 年流量收益優化經驗</h2>
             <p>
               從大型媒體網站、社群網站到個人部落格，RevPushup 團隊深黯廣告生態，擁有豐富的流量變現經驗，幫助網站主獲取應得的廣告收益
             </p>
@@ -201,11 +218,74 @@
             <a class="btn-outline-reg" href="article.html">立即申請</a>
           </div> <!-- end of text-container -->
         </div> <!-- end of col -->
-        <div class="col-lg-6 col-xl-7">
+        <!-- <div class="col-lg-6 col-xl-7">
           <div class="image-container">
-            <img class="img-fluid" src="images/details-2.png" alt="alternative">
-          </div> <!-- end of image-container -->
-        </div> <!-- end of col -->
+            <img class="img-fluid" src="images/details-2.png" alt="alternative"> -->
+          <!--</div>  end of image-container -->
+        <!--</div>  end of col -->
+
+        <div class="col-lg-7 col-xl-8" style="position: relative; top: 50px;">
+          <div class="testimonial-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item bg-light p-4 wow fadeInUp owl-item-inner carousel-shadow" data-wow-delay="0.3s">
+              <div class="d-flex justify-content-start">
+                <div class="thumbnail-container rounded-circle ms-2 mx-2 bg-dark-grey">
+                  <img src="images/awwrated.svg" class="rounded-circle p-2" alt="">
+                </div>
+                <div class="my-auto text-start">
+                  <h5><a class="with-icon" href="https://awwrated.com" target="_blank" style="text-decoration: none; color: #09F;">Awwrated</a> 影劇評論平台</h5>
+                  <p class="mb-0">廣告來源多元化、版位優化，三個月內 RPM 提升超過 20 倍</p>
+                </div>
+              </div>
+              <div class="d-flex mt-3" style="max-height: 400px;">
+                <!-- <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div> -->
+                <!-- <p class="mt-4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam eos impedit eveniet dolorem culpa ullam incidunt vero quo recusandae nemo? Molestiae doloribus iure,
+                </p> -->
+                <img class="img-fluid" src="images/awwrated_chart.png" alt="alternative">
+              </div>
+              
+            </div>
+            <div class="testimonial-item bg-light p-4 wow fadeInUp owl-item-inner carousel-shadow" data-wow-delay="0.3s">
+              <div class="d-flex justify-content-start">
+                <div class="thumbnail-container rounded-circle ms-2 mx-2 bg-grey-blue">
+                  <i class="far fa-newspaper fa-2x text-white"></i>
+                </div>
+                <div class="my-auto text-start">
+                  <h5>權威財經新聞媒體</h5>
+                  <p class="mb-0">實施 SPO (Supply Path Optimization)，半年內 RPM 提升超過 200%</p>
+                </div>
+              </div>
+              <div class="d-flex mt-3" style="max-height: 400px;">
+                <!-- <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div> -->
+                <!-- <p class="mt-4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam eos impedit eveniet dolorem culpa ullam incidunt vero quo recusandae nemo? Molestiae doloribus iure,
+                </p> -->
+                <img class="img-fluid" src="images/media_chart.png" alt="alternative">
+              </div>
+              
+            </div>
+            <div class="testimonial-item bg-light p-4 wow fadeInUp owl-item-inner carousel-shadow" data-wow-delay="0.3s">
+              <div class="d-flex justify-content-start">
+                <div class="thumbnail-container rounded-circle ms-2 mx-2 bg-grey-blue">
+                  <i class="far fa-comments fa-2x text-white"></i>
+                </div>
+                <div class="my-auto text-start">
+                  <h5>知名鄉民網路論壇</h5>
+                  <p class="mb-0">版位優化、導入 rich media 及原生廣告，一年內 RPM 提升超過 100%</p>
+                </div>
+              </div>
+              <div class="d-flex mt-3" style="max-height: 400px;">
+                <!-- <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div> -->
+                <!-- <p class="mt-4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam eos impedit eveniet dolorem culpa ullam incidunt vero quo recusandae nemo? Molestiae doloribus iure,
+                </p> -->
+                <img class="img-fluid" src="images/community_chart.png" alt="alternative">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
       </div> <!-- end of row -->
     </div> <!-- end of container -->
   </div> <!-- end of basic-2 -->
@@ -213,7 +293,7 @@
 
 
   <!-- Features -->
-  <div id="features" class="accordion-1">
+  <div class="accordion-1">
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
@@ -227,8 +307,8 @@
               
             <!-- Accordion Item -->
             <div class="accordion-item">
-              <div class="accordion-icon">
-                <span class="fas fa-tv"></span>
+              <div class="accordion-icon bg-orange color-denim">
+                <span class="fas fa-rocket"></span>
               </div> <!-- end of accordion-icon -->
               <div class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -245,15 +325,15 @@
 
             <!-- Accordion Item -->
             <div class="accordion-item">
-              <div class="accordion-icon blue">
-                <span class="fas fa-microphone"></span>
+              <div class="accordion-icon bg-grey-blue color-denim">
+                <span class="fas fa-money-bill-wave"></span>
               </div> <!-- end of accordion-icon -->
               <div class="accordion-header" id="headingTwo">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                   自動競價機制最大化收益表現
                 </button>
               </div> <!-- end of accordion-header -->
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   自動競價機制最大化每次廣告曝光單價，提升整體廣告變現效益。
                 </div>
@@ -263,15 +343,15 @@
 
             <!-- Accordion Item -->
             <div class="accordion-item">
-              <div class="accordion-icon purple">
-                <span class="fas fa-video"></span>
+              <div class="accordion-icon bg-pure color-denim">
+                <span class="fas fa-lightbulb"></span>
               </div> <!-- end of accordion-icon -->
               <div class="accordion-header" id="headingThree">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                   專業顧問提供數據分析支援
                 </button>
               </div> <!-- end of accordion-header -->
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   RevPushup 專屬顧問量身打造收益增長策略，數據化決策提升廣告變現收益。
                 </div>
@@ -293,7 +373,7 @@
 
 
   <!-- Testimonials -->
-  <div class="cards-2 bg-gray">
+  <div id="testimonials" class="cards-2 bg-gray">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -305,43 +385,46 @@
 
           <!-- Card -->
           <div class="card">
-            <img class="quotes" src="images/quotes.svg" alt="alternative">
+            <!-- <img class="quotes" src="images/quotes.svg" alt="alternative"> -->
+            <i class="fas fa-quote-right fa-2x quotes"></i>
             <div class="card-body">
               <p class="testimonial-text">
-                從沒想過廣告收益成長有這麼大的空間，Awwrated 三個月內收益成長 <span style="font-size: 1.5em; color:rgb(255, 142, 142); font-weight: bolder;">超過 20 倍</span>！且還在持續成長！
+                從沒想過廣告收益成長有這麼大的空間，Awwrated 三個月內收益成長 <span style="font-size: 1.5em; color:#FD8916; font-weight: bolder;">超過 20 倍</span>！且還在持續成長！
               </p>
               <div class="testimonial-author">Harry</div>
               <div class="occupation">Founder, <a href="https://awwrated.com" target="_blank">Awwrated.com</a></div>
             </div>
-            <div class="gradient-floor red-to-blue"></div>
+            <div class="gradient-floor orange-to-greyblue"></div>
           </div>
           <!-- end of card -->
 
           <!-- Card -->
           <div class="card">
-            <img class="quotes" src="images/quotes.svg" alt="alternative">
+            <!-- <img class="quotes" src="images/quotes.svg" alt="alternative"> -->
+            <i class="fas fa-quote-right fa-2x quotes"></i>
             <div class="card-body">
               <p class="testimonial-text">
-                引入多元化廣告來源後，網站收益表現有顯著提升，RPM 在一年內成長 <span style="font-size: 1.5em; color:rgb(255, 142, 142); font-weight: bolder;">超過 100%</span>！
+                引入多元化廣告來源後，網站收益表現有顯著提升，RPM 在一年內成長 <span style="font-size: 1.5em; color:#FD8916; font-weight: bolder;">超過 100%</span>！
               </p>
               <div class="testimonial-author">知名鄉民網路論壇</div>
-              <!-- <div class="occupation">General Manager, Presentop</div> -->
+              <div class="occupation">&nbsp;</div>
             </div>
-            <div class="gradient-floor blue-to-purple"></div>
+            <div class="gradient-floor greyblue-to-deepturquoise"></div>
           </div>
           <!-- end of card -->
 
           <!-- Card -->
           <div class="card">
-            <img class="quotes" src="images/quotes.svg" alt="alternative">
+            <!-- <img class="quotes" src="images/quotes.svg" alt="alternative"> -->
+            <i class="fas fa-quote-right fa-2x quotes"></i>
             <div class="card-body">
               <p class="testimonial-text">
-                整體廣告變現策略體質優化，接入更多廣告來源互相競價，半年內 RPM 成長 <span style="font-size: 1.5em; color:rgb(255, 142, 142); font-weight: bolder;">超過 200%</span>！
+                整體廣告變現策略體質優化，接入更多廣告來源互相競價，半年內 RPM 成長 <span style="font-size: 1.5em; color:#FD8916; font-weight: bolder;">超過 200%</span>！
               </p>
               <div class="testimonial-author">權威新聞媒體</div>
-              <!-- <div class="occupation">General Manager, Presentop</div> -->
+              <div class="occupation">&nbsp;</div>
             </div>
-            <div class="gradient-floor purple-to-green"></div>
+            <div class="gradient-floor deepturquoise-to-orange"></div>
           </div>
           <!-- end of card -->
 
@@ -350,6 +433,77 @@
     </div> <!-- end of container -->
   </div> <!-- end of cards-2 -->
   <!-- end of testimonials -->
+
+  <!-- Faq Section -->
+  <section class="faq-9 faq section light-background" id="faq">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-5" data-aos="fade-up">
+          <h2 class="faq-title">Rev<span style="color: #FD8916">Pushup</span> 流量變現服務 FAQ</h2>
+          <!-- <p class="faq-description">RevPushup 顧問提供您專業服務</p> -->
+          <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
+            <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+          <div class="faq-container">
+
+            <div class="faq-item faq-active">
+              <h3>誰適合與 Rev<span style="color: #FD8916">Pushup</span>&nbsp;合作？</h3>
+              <div class="faq-content">
+                <ul>
+                  <li>部落格及各種網站的經營者</li>
+                  <li>希望提升廣告變現收益的你</li>
+                  <li>尋求專業顧問提供廣告變現解決方案</li>
+                </ul>
+              </div>
+              <i class="fa fa-chevron-right faq-toggle"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>什麼是 RPM？為什麼 RPM 這麼重要？</h3>
+              <div class="faq-content">
+                <p>
+                  RPM (Revenue per Mille) 是指每千次網頁瀏覽所產生的收益，是衡量整體網站廣告變現能力的重要指標。有別於 CPC (Cost per Click)、CPM (Cost per Mille) 及 eCPM (Effective Cost per Mille) 等指標，RPM 是綜合考量廣告變現收益的指標，RevPushup 透過多元化廣告來源及自動競價機制，提升 RPM，讓您的流量更有價值。
+                </p>
+              </div>
+              <i class="fa fa-chevron-right faq-toggle"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>和 Rev<span style="color: #FD8916">Pushup</span>&nbsp;的合作流程？</h3>
+              <div class="faq-content">
+                  <ol>
+                    <li><a class="color-orange" href="#contact">留下您的聯絡資訊</a>，RevPushup 專業顧問與您聯繫</li>
+                    <li>RevPushup 專業顧問與您聯繫，提供最佳化廣告收益解決方案</li>
+                    <li>RevPushup 專業顧問與您合作，提升您的廣告變現收益</li>
+                    <li>RevPushup 專業顧問提供數據分析支援，持續優化廣告變現策略</li>
+                  </ol>
+              </div>
+              <i class="fa fa-chevron-right faq-toggle"></i>
+            </div><!-- End Faq item-->
+
+            <div class="faq-item">
+              <h3>Rev<span style="color: #FD8916">Pushup</span>&nbsp;流量變現服務如何收費？</h3>
+              <div class="faq-content">
+                <p>
+                  Rev<span style="color: #FD8916">Pushup</span>&nbsp;流量變現服務以優於業界標準的比例從您的廣告變現收益中提取服務費用，並保證您的廣告變現收益提升。
+                </p>
+              </div>
+              <i class="fa fa-chevron-right faq-toggle"></i>
+            </div><!-- End Faq item-->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- /Faq Section -->
 
   <!-- Invitation -->
   <div class="basic-3">
@@ -371,7 +525,6 @@
   </div> <!-- end of basic-3 -->
   <!-- end of invitation -->
 
-
   <!-- Contact -->
   <div id="contact" class="form-1">
     <div class="container">
@@ -383,7 +536,7 @@
             <p>
               留下您的聯絡方式，RevPushup 專業顧問將與您聯繫，提供最佳化廣告收益解決方案
             </p>
-            <ul class="list-unstyled li-space-lg">
+            <!-- <ul class="list-unstyled li-space-lg">
               <li class="d-flex">
                 <i class="fas fa-square"></i>
                 <div class="flex-grow-1">Vel maximus nunc aliquam ut. Donec semper, magna a pulvinar</div>
@@ -396,13 +549,13 @@
                 <i class="fas fa-square"></i>
                 <div class="flex-grow-1">Sem pulvinar suscipit sit amet quis lorem. Sed risus</div>
               </li>
-            </ul>
+            </ul> -->
           </div> <!-- end of text-container -->
         </div> <!-- end of col -->
         <div class="col-lg-6">
 
           <!-- Contact Form -->
-          <form>
+          <!-- <form>
             <div class="form-group">
               <input type="text" class="form-control-input" placeholder="Name" required>
             </div>
@@ -418,8 +571,10 @@
             <div class="form-group">
               <button type="submit" class="form-control-submit-button">Submit</button>
             </div>
-          </form>
+          </form> -->
           <!-- end of contact form -->
+
+          <div class="ml-embedded" data-form="OGgeX4"></div>
 
         </div> <!-- end of col -->
       </div> <!-- end of row -->
@@ -427,86 +582,41 @@
   </div> <!-- end of form-1 -->
   <!-- end of contact -->
 
+  <!-- Copyright -->
+  <div class="copyright bg-gray">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-lg-6 col-md-12 col-sm-12">
+          <ul class="list-unstyled li-space-lg p-small">
+            <li><a href="article.html">Article Details</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>  --><!-- end of col -->
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <p class="p-small statement">Copyright © <a href="#">RevPushup</a></p>
+        </div> <!-- end of col -->
 
-    <!-- Footer -->
-    <div class="footer bg-gray">
-        <img class="decoration-circles" src="images/decoration-circles.png" alt="alternative">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4>If you want to find out which are the right influencers for your product marketing campaigns then follow us</h4>
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-youtube fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <ul class="list-unstyled li-space-lg p-small">
-                        <li><a href="article.html">Article Details</a></li>
-                        <li><a href="terms.html">Terms & Conditions</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <p class="p-small statement">Copyright © <a href="#">Your name</a></p>
-                </div> <!-- end of col -->
-
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <p class="p-small statement">Distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
+      </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of copyright --> 
+  <!-- end of copyright -->
     
 
-    <!-- Back To Top Button -->
-    <button onclick="topFunction()" id="myBtn">
-        <img src="images/up-arrow.png" alt="alternative">
-    </button>
-    <!-- end of back to top button -->
-    	
-    <!-- Scripts -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+  <!-- Back To Top Button -->
+  <button onclick="topFunction()" id="myBtn">
+    <img src="images/up-arrow.png" alt="alternative">
+  </button>
+  <!-- end of back to top button -->
+    
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+  <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+  
+  <script src="wow/wow.min.js"></script> <!-- WOW.js Mini file -->
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+
+  <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>

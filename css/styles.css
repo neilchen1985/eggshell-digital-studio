@@ -335,6 +335,21 @@ a:hover {
 	color: #FD8916;
 }
 
+span.brand {
+  background-image: url(../images/logo.webp);
+  background-size: cover;
+  display: inline-block;
+  height: 1em;
+  width: calc(1em / 260 * 1307);
+}
+
+span.brand-light {
+  background-image: url(../images/logo_light.webp);
+  background-size: cover;
+  display: inline-block;
+  height: 1em;
+  width: calc(1em / 260 * 1307);
+}
 
 /**********************/
 /*     Navigation     */
@@ -353,8 +368,8 @@ a:hover {
 }
 
 .navbar .logo-image img {
-    width: 126px;
-	height: 32px;
+  /* width: 126px; */
+	height: 40px;
 }
 
 .navbar .logo-text {
@@ -607,15 +622,19 @@ a:hover {
 .accordion-1 {
 	padding-top: 9.25rem;
 	padding-bottom: 9.75rem;
-	/* background: url('../images/features-background.jpg') center center no-repeat;
-	background-size: cover; */
-  background-color: #173b61;
+	background: url('../images/features-background.webp') center center no-repeat;
+	background-size: cover;
+  /* background-color: #173b61; */
 }
 
 .accordion-1 .h2-heading {
 	margin-bottom: 1rem;
 	color: #ffebd0;
 	text-align: center;
+}
+
+.accordion-1 .h2-heading img{
+  height: 2rem;
 }
 
 .accordion-1 .p-heading {
@@ -1105,6 +1124,10 @@ a:hover {
   font-weight: 900;
   margin-bottom: 1rem;
   color: #173b61;
+}
+
+.faq .faq-title img {
+  height: 2.5rem;
 }
 
 .faq .faq-description {

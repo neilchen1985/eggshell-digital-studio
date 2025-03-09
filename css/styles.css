@@ -234,7 +234,7 @@ a:hover {
 }
 
 .btn-outline-reg:hover {
-	background-color: #ef473d;
+	background-color: #FD8916;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -480,8 +480,6 @@ span.brand-light {
 .header {
 	padding-top: 8rem;
 	padding-bottom: 4em;
-	background: url('../images/header-background.jpg') center center no-repeat;
-	background-size: cover;
 	text-align: center;
 }
 
@@ -1087,7 +1085,7 @@ span.brand-light {
 }
 
 .testimonial .testimonial-carousel .testimonial-item{
-  border-radius: 30px;
+  border-radius: 1em;
 }
 
 .testimonial .testimonial-carousel .thumbnail-container {
@@ -1338,6 +1336,8 @@ span.brand-light {
 	/* Header */
 	.header {
 		text-align: left;
+    background: url('../images/header-background.jpg') center center no-repeat;
+	  background-size: cover;
 	}
 
 	.header .text-container {
